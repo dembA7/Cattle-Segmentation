@@ -37,24 +37,23 @@ Check out some real detections of the model down below!
 └── demba7-cattle-segmentation/
     ├── README.md
     ├── LICENSE
-    ├── requirements.txt
-    ├── dataset/
+    ├── requirements.txt         # Lists the required Python packages for the project
+    ├── dataset/                 # Contains images from the dataset used to train the models
     │   └── detect/
-    ├── models/
+    │   ├── original/
+    ├── models/                  # All iterations best model weights
     │   ├── v0.pt
     │   ├── v1.pt
     │   └── v2.pt
     ├── results/
-    │   ├── v1/
-    │   │   ├── events.out.tfevents.1748219941.DESKTOP-SMIO5NM.33432.0
+    │   ├── v1/                  # First iteration model results
     │   │   ├── hyp.yaml
     │   │   ├── opt.yaml
     │   │   ├── results.csv
     │   │   └── weights/
     │   │       ├── best.pt
     │   │       └── last.pt
-    │   └── v2/
-    │       ├── events.out.tfevents.1748237442.DESKTOP-SMIO5NM.30464.0
+    │   └── v2/                  # Second iteration model results
     │       ├── hyp.yaml
     │       ├── opt.yaml
     │       ├── results.csv
@@ -63,9 +62,9 @@ Check out some real detections of the model down below!
     │           ├── best.pt
     │           └── last.pt
     └── source/
-        ├── dataset.yaml
-        ├── detect.ipynb
-        └── train.ipynb
+        ├── dataset.yaml         # Contains relative routes to dataset directories
+        ├── detect.ipynb         # Detection notebook using trained models
+        └── train.ipynb          # Training code for new models
 ```
 
 ## License 
