@@ -1,5 +1,4 @@
 # Bounding Box Dataset
-dataset/original/
 dataset/split/train/
 dataset/split/test/
 dataset/split/val/
