@@ -1,6 +1,10 @@
 # Bounding Box Dataset
 dataset/v5/*
 dataset/v11/*
+dataset/detect/videos/
+
+# Frames
+results/v3/track/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
