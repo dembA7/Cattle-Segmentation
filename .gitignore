@@ -1,10 +1,6 @@
 # Bounding Box Dataset
-dataset/split/train/
-dataset/split/test/
-dataset/split/val/
-dataset/split/train.cache
-dataset/split/test.cache
-dataset/split/val.cache
+dataset/v5/*
+dataset/v11/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
