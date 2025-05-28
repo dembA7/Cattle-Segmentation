@@ -1,6 +1,0 @@
-train: C:/Users/Artur/Desktop/TEC/8vo/TC3002B/M2-ML/Cattle-Segmentation/dataset/split/train/
-test: C:/Users/Artur/Desktop/TEC/8vo/TC3002B/M2-ML/Cattle-Segmentation/dataset/split/test/
-val: C:/Users/Artur/Desktop/TEC/8vo/TC3002B/M2-ML/Cattle-Segmentation/dataset/split/val/
-
-nc: 1
-names: ['cow']
