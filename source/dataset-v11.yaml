@@ -1,0 +1,6 @@
+train: C:/Users/Artur/Desktop/TEC/8vo/TC3002B/M2-ML/Cattle-Segmentation/dataset/v11/train/
+test: C:/Users/Artur/Desktop/TEC/8vo/TC3002B/M2-ML/Cattle-Segmentation/dataset/v11/test/
+val: C:/Users/Artur/Desktop/TEC/8vo/TC3002B/M2-ML/Cattle-Segmentation/dataset/v11/val/
+
+nc: 1
+names: ['cow']
