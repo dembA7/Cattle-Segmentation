@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 ### Usage
 
-To run the model on a sample image, simply add your image to the dataset/detect/ directory and then run the source/model_detection.ipynb file.
+To run the model on a sample image, simply add your image to the dataset/detect/ directory and then run the source/detect.ipynb file.
 
 ## Detections
 
