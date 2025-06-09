@@ -34,17 +34,18 @@ Check out some real detections of the model down below!
 ## Repository Structure
 
 ```bash
-└── demba7-cattle-segmentation/
+└──
     ├── README.md
     ├── LICENSE
     ├── requirements.txt         # Lists the required Python packages for the project
     ├── dataset/                 # Contains images from the dataset used to train the models
     │   └── detect/
     │   ├── original/
-    ├── models/                  # All iterations best model weights
-    │   ├── v0.pt
-    │   ├── v1.pt
-    │   └── v2.pt
+    ├── models/                  
+    │   ├── v0.pt                # Model weights used for transfer learning
+    │   ├── v1.pt                # Model weights of the first iteration model (YOLOv5)
+    │   └── v2.pt                # Model weights of the second iteration model (YOLOv5 + Transfer Learning)
+    │   └── v3.pt                # Model weights of the third iteration model (YOLOv11 + Extended Dataset)
     ├── results/
     │   ├── v1/                  # First iteration model results
     │   │   ├── hyp.yaml
@@ -54,17 +55,22 @@ Check out some real detections of the model down below!
     │   │       ├── best.pt
     │   │       └── last.pt
     │   └── v2/                  # Second iteration model results
-    │       ├── hyp.yaml
-    │       ├── opt.yaml
+    │   │   ├── hyp.yaml
+    │   │   ├── opt.yaml
+    │   │   ├── results.csv
+    │   │   └── weights/
+    │   │       ├── best.pt
+    │   │       └── last.pt
+    │   └── v3/                  # Third iteration model results
+    │       ├── args.yaml
     │       ├── results.csv
-    │       ├── detected/
     │       └── weights/
     │           ├── best.pt
     │           └── last.pt
     └── source/
-        ├── dataset.yaml         # Contains relative routes to dataset directories
-        ├── detect.ipynb         # Detection notebook using trained models
-        └── train.ipynb          # Training code for new models
+        ├── dataset-vn.yaml      # Contains relative routes to dataset directories based on the architecture
+        ├── detect-vn.ipynb      # Detection notebook using trained models
+        └── train-vn.ipynb       # Training code for new models
 ```
 
 ## License 
